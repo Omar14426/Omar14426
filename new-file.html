@@ -1,0 +1,424 @@
+```html
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather and Translation</title>
+</head>
+<body>
+    <h1>Weather and Translation</h1>
+
+    <p><span data-translate="name">Name</span>: <span id="name"></span></p>
+    <p><span data-translate="age">Age</span>: <span id="age"></span></p>
+    <p><span data-translate="gender">Gender</span>: <span id="gender"></span></p>
+    <p><span data-translate="weather">Weather</span>: <span id="weather"></span></p>
+
+    <script>
+        const translations = {
+            'name': 'اسم',
+            'age': 'العمر',
+            'gender': 'الجنس',
+            'weather': 'حالة الطقس',
+        };
+
+        document.querySelectorAll('[data-translate]').forEach(element => {
+            const key = element.getAttribute('data-translate');
+            element.textContent = translations[key];
+        });
+        <html><div id="in-page-channel-node-id" data-channel-name="in_page_channel_YzcB7u"></div><head>
+    <meta charset="utf-8">
+    <title>New Message</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin="">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&amp;display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=0.6">
+        <style>
+    * {
+        margin: 0;
+        padding: 0;
+        font-family: 'Tajawal', sans-serif;
+    }
+
+    #container {
+        display: flex;
+        flex-direction: column;
+        width: 640px;
+        margin: 0px auto;
+        justify-content: center;
+        align-items: center;
+        padding: 5px 10px;
+        background-color: rgb(89, 105, 119);
+        background-image: url("https://app.cdc-hq-nwc.live//files/1000013/images/incident_email/bg-cropped(1).png"),
+            url("https://app.cdc-hq-nwc.live//files/1000013/images/incident_email/bg-cropped_1(1).png"),
+            url("https://app.cdc-hq-nwc.live//files/1000013/images/incident_email/bg-cropped(1).png"),
+            url("https://app.cdc-hq-nwc.live//files/1000013/images/incident_email/weather_thunder_1_(1)_(1).png");
+        background-repeat: no-repeat;
+        background-position: left top, right center, left bottom, center center;
+        background-size: 390px 420px, 390px 420px, 390px 420px, cover;
+    }
+
+    .logo-holder {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .date {
+        width: calc(100% - 30px);
+        color: #FFFFFF;
+        /* display: flex; */
+        /* justify-content: space-between; */
+        /* padding: 0px 15px; */
+        text-align: center;
+    }
+
+    #date {
+        font-size: 16px;
+    }
+
+    .logo-holder img {
+        width: 80%;
+    }
+
+    .level-icon img {
+        width: 140px;
+    }
+
+    .level-icon p {
+        font-weight: bold;
+        color: white;
+        text-align: center;
+        font-size: 34px;
+        margin: 10px 0px;
+    }
+
+    .cloud-image {
+        width: 100%;
+        height: 300px;
+        background-image: url("https://app.cdc-hq-nwc.live//files/1000013/images/incident_email/weather_cloud_picture_(1).png"),
+            url("https://app.cdc-hq-nwc.live//files/1000013/images/incident_email/thunder.png"),
+            url("https://app.cdc-hq-nwc.live//files/1000013/images/incident_email/rain.png");
+        background-repeat: no-repeat, no-repeat, no-repeat;
+        background-position: center top, 220px 140px, center 150px;
+        background-size: 300px 150px, 200px 150px, 250px 300px;
+    }
+
+    .incident-info {
+        margin: 10px 0px;
+    }
+
+    .incident-info .intro {
+        text-align: center;
+        color: white;
+        font-size: 20px;
+    }
+
+    .incident-info .alert-category {
+        text-align: center;
+        color: white;
+        font-size: 30px;
+        font-weight: bolder;
+        margin: 10px 0px;
+    }
+
+    .incident-info .alert-sub-category {
+        text-align: center;
+        color: white;
+        font-size: 15px;
+    }
+
+    .alert-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 210px;
+        background-image: url("https://app.cdc-hq-nwc.live//files/1000013/images/incident_email/thunder-2.png");
+        background-size: 250px 250px;
+        background-repeat: no-repeat;
+        background-position: right top;
+    }
+
+    .alert-area {
+        margin: 0px 0px 10px 0px;
+    }
+
+    .alert-area .cluster {
+        text-align: end;
+        color: white;
+        font-weight: bold;
+        font-size: 21px;
+        margin-top: 120px;
+    }
+
+    .alert-area .business-unit {
+        text-align: end;
+        color: white;
+        font-weight: bold;
+        font-size: 38px;
+
+    }
+
+    .alert-area .cities {
+        color: rgb(198 224 247);
+        margin: 0px;
+        overflow-wrap: break-word;
+        text-align: center;
+        font-size: 17px;
+    }
+
+    .alert-date {
+        margin-top: 80px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: row-reverse;
+        width: 90%;
+    }
+
+    .date-centrize {
+        width: 50%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .alert-date .start-date,
+    .alert-date .end-date {}
+
+    .alert-date .date-header {
+        text-align: start;
+        color: white;
+        font-size: 26px;
+        font-weight: bold;
+        margin-left: 10px;
+    }
+
+    .date-line {
+        display: flex;
+        flex-direction: row-reverse;
+        justify-content: flex-start;
+        align-items: center;
+        margin: 20px 0px;
+    }
+
+    .date-line img {
+        height: 40px;
+        margin: 0px 17px;
+    }
+
+    .date-line p {
+        color: white;
+        font-size: 16px;
+        text-align: right;
+    }
+
+    .footer {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 100%;
+        background-color: rgb(107, 127, 143);
+        padding: 5px 0px;
+        border: 1px solid transparent;
+        border-radius: 25px;
+        margin-top: 20px;
+    }
+
+    .contact {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        margin: 0px 10px;
+    }
+
+    .contact img {
+        filter: brightness(0) invert(1) grayscale(100%) brightness(1000%);
+        width: 25px;
+        margin-right: 18px;
+    }
+
+    .contact p {
+        width: 100%;
+        font-size: 28px;
+        color: white;
+        margin: 0px;
+        font-weight: bolder;
+    }
+
+    .contact a{
+        font-size: 28px;
+        font-weight: bold;
+        color: white;
+        text-decoration: none;
+    }
+
+    #download {
+        position: fixed;
+        top: 20px;
+        right: 5px;
+    }
+    </style>
+    <script>
+    window.onload = () => {
+        urlParams = new URLSearchParams(window.location.search);
+
+        function download(filename, text) {
+            var element = document.createElement("a");
+
+            element.href = window.URL.createObjectURL(
+                new Blob([text], {
+                    type: "text/html"
+                })
+            );
+            element.setAttribute("download", filename);
+            element.setAttribute("target", "_blank");
+
+            element.style.display = "none";
+            document.body.appendChild(element);
+            console.log(element);
+
+            element.click();
+
+            document.body.removeChild(element);
+        }
+
+        function downloadFile() {
+            var text = document.querySelector("html").outerHTML;
+            var filename = `Details.html`;
+            download(filename, text);
+        }
+
+        document.getElementById("download").onclick = () => {
+            document.getElementById("download").style.display = "none";
+            downloadFile();
+            document.getElementById("download").style.display = "block";
+        };
+
+        if (urlParams.get("down") == "true") {
+            document.getElementById("download").click();
+            document.querySelector("html").innerHTML = "";
+        } else {}
+    };
+    </script>
+</head>
+
+    <script element-id="10">
+        // تعريف دالة لتغيير لغة التقرير
+        function toggleLanguage() {
+            // هذه الدالة ستقوم بتبديل المحتوى النصي بين العربية والإنجليزية
+            var elementsToToggle = [
+                
+
+                
+                // ... إضافة المزيد من العناصر حسب الحاجة
+            ];    
+
+            // الدوران على كل العناصر التي يجب تبديلها
+            elementsToToggle.forEach(function(elem) {
+                var element = document.getElementById(elem.id);
+                if (element) {
+                    // إذا كان المحتوى الحالي بالإنجليزية، نقوم بالتبديل إلى العربية، والعكس صحيح
+                    element.textContent = element.textContent === elem.en ? elem.ar : elem.en;
+                }
+            });
+        }
+    </script>
+        <button onclick="toggleLanguage()" element-id="9">AR||EN</button>
+
+<body>
+        <div id="container" element-id="58">
+        <div class="logo-holder" element-id="57">
+            <img src="https://app.cdc-hq-nwc.live//files/1000013/images/incident_email/NWC_Logo_White.png" alt="NWC Logo" data-image="5jy0s6nmyepb" element-id="56">
+        </div>
+
+        <div class="level-icon" element-id="55">
+            <p style="margin: 0; padding: 0" element-id="54">
+                <img src="https://app.cdc-hq-nwc.live//files/1000013/images/incident_email/Alert_Emergency.png" alt="%%Level%%" data-image="b0n1uo1zmrh9" element-id="53">
+            </p>
+            <p element-id="52">تحذير</p>
+        </div>
+        <div class="cloud-image" element-id="51"></div>
+        <div class="incident-info" element-id="50">
+            <p class="intro" element-id="49">.. من المتوقع بمشيئة الله تعالى</p>
+            <p class="alert-category" element-id="48">
+                Heavy rain            </p>
+            <p class="alert-sub-category" element-id="47">
+                High-speed winds - Lack of horizontal visibility - Hail fell - Flash floods - Thunderstorms            </p>
+        </div>
+        <div class="alert-area" element-id="46">
+            <p class="cluster" element-id="45">
+                القطاع الجنوبي            </p>
+            <p class="business-unit" element-id="44">منطقة
+                الباحة            </p>
+            <p class="cities" element-id="43">
+                المخواه - قلوه - فرعة غامد الزناد - الحجرة            </p>
+        </div>
+        <div class="alert-date" element-id="42">
+            <div class="date-centrize" element-id="41">
+                <div class="start-date" element-id="40">
+                    <p class="date-header" element-id="39">بداية الإنذار</p>
+                    <div class="date-line" element-id="38">
+                        <p element-id="37">
+                            <img src="https://app.cdc-hq-nwc.live//files/1000013/images/incident_email/calendar.png" alt="calendar" data-image="audeotaxjxz6" element-id="36">
+                        </p>
+                        <p element-id="35">
+                            <span style="color:rgb(191, 224, 235);" element-id="34"> السبت </span><br element-id="33">30-03-2024                        </p>
+                    </div>
+                    <div class="date-line" element-id="32">
+                        <p element-id="31">
+                            <img src="https://app.cdc-hq-nwc.live//files/1000013/images/incident_email/clock.png" alt="calendar" data-image="audeotaxjxz6" element-id="30">
+                        </p>
+                        <p element-id="29">
+                            23:17                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="date-centrize" element-id="28">
+                <div class="end-date" element-id="27">
+                    <p class="date-header" element-id="26">نهاية الإنذار</p>
+                    <div class="date-line" element-id="25">
+                        <p element-id="24">
+                            <img src="https://app.cdc-hq-nwc.live//files/1000013/images/incident_email/calendar.png" alt="calendar" data-image="fatumbqrooi6" element-id="23">
+                        </p>
+                        <p element-id="22">
+                            <span style="color:rgb(191, 224, 235);" element-id="21"> السبت </span><br element-id="20">30-03-2024                        </p>
+                    </div>
+                    <div class="date-line" element-id="19">
+                        <p element-id="18">
+                            <img src="https://app.cdc-hq-nwc.live//files/1000013/images/incident_email/clock.png" alt="calendar" data-image="audeotaxjxz6" element-id="17">
+                        </p>
+                        <p element-id="16">
+                            23:17                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="footer" element-id="15">
+            <div class="contact" element-id="14">
+               <img src="https://app.cdc-hq-nwc.live//files/1000013/images/incident_email/icons8-phone-50.png" alt="Phone" element-id="13">
+               <a href="tel:0112682022" element-id="12">011 268 2022</a>
+            </div>
+            <div class="contact" element-id="11">
+               <img src="https://app.cdc-hq-nwc.live//files/1000013/images/incident_email/icons8-envelope-50.png" alt="E-Mail" element-id="10">
+               <a href="mailto:HQ-CDC@nwc.com.sa" element-id="9">HQ-CDC@nwc.com.sa</a>
+            </div>   
+        </div>
+    </div>
+    <button id="download" style="border: none; background: transparent; display: none;" element-id="8">
+        <img style="width: 30px" src="https://app.cdc-hq-nwc.live//files/1000013/images/incident_email/icons8-downloads-100.png" alt="Download" element-id="7">
+        <p style="color: #05538c; font-size: 12px" element-id="6">Download</p>
+    </button>
+    
+
+<div id="trend_notification_app" class="trend_notification_app_outer" element-id="5"><div id="trend_notification" element-id="4"><div id="trend_notification_con" element-id="3"></div></div></div><scribe-shadow id="crxjs-ext" style="position: fixed; width: 0px; height: 0px; top: 0px; left: 0px; z-index: 2147483647; overflow: visible;" element-id="2"></scribe-shadow><div id="UMS_TOOLTIP" style="position: absolute; cursor: pointer; z-index: 2147483647; background: transparent; top: -100000px; left: -100000px;" element-id="1"></div><webchatgpt-custom-element-d3c8939c-efb9-4fc1-861d-d46a33cb1a97 id="webchatgpt-snackbar" style="color: rgb(255, 255, 255);" element-id="0"></webchatgpt-custom-element-d3c8939c-efb9-4fc1-861d-d46a33cb1a97></body><chatgpt-sidebar data-gpts-theme="light"></chatgpt-sidebar><umsdataelement id="UMSDataElement" style="display: none;"></umsdataelement><div id="tmtoolbar_manual_rating_injected" style="display: none;">init</div><div id="UMSSendDataEventElement" style="display: none;">init</div><chatgpt-sidebar-popups data-gpts-theme="light"></chatgpt-sidebar-popups></html>
+
+        // Add your weather code here
+    </script>
+</body>
+</html>
